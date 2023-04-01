@@ -1,0 +1,1148 @@
+@font-face {
+  font-family: roboto;
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+}
+
+h1 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ----- Navbar container with opacity */
+
+.container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-wrapper {
+  width: 80rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  z-index: 1111;
+}
+
+/* ---------- navbar -------------- */
+
+nav {
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  height: 80px;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: 11111;
+}
+
+.nav-wrapper {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  text-decoration: none;
+}
+
+.hamburger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #4db400;
+}
+
+.logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 8.375rem;
+  height: 2.5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 59.125rem;
+}
+
+nav ul li {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 25.25rem;
+}
+
+nav ul li a {
+  display: flex;
+  text-decoration: none;
+  text-transform: uppercase;
+  justify-content: space-around;
+  font-size: 0.85rem;
+  color: white;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 12.5rem;
+  height: 5rem;
+  z-index: 111;
+}
+
+.buttons-wrapper a {
+  text-decoration: none;
+  color: white;
+  margin-top: 5px;
+  font-size: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #4db501;
+  outline: inherit;
+  border: none;
+  transition: 0.5s;
+}
+
+button:hover {
+  scale: 1.1;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ----- hero image ------ */
+
+.hero-image img {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -111;
+  object-fit: cover;
+  height: 110%;
+}
+
+.hero-main-info-box {
+  position: absolute;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  top: 200px;
+  margin-bottom: 400px;
+  color: white;
+  z-index: -111;
+  font-size: 1.875rem;
+}
+
+.info-box {
+  width: 25rem;
+}
+
+.info-box ul {
+  width: 25rem;
+  margin-left: 2.5rem;
+  height: 25rem;
+  list-style: none;
+}
+
+.info-box ul li {
+  padding-top: 1.875rem;
+}
+
+.info-box ul li a p {
+  margin-top: 1.875rem;
+}
+
+.vape-image img {
+  width: 3.125rem;
+  transform: rotate(-25deg);
+  z-index: 1111;
+  margin-left: 25rem;
+  transition: 2s;
+}
+
+.vape-image img:hover {
+  scale: 1.2;
+  transition: 2s;
+  transform: rotate(30deg);
+}
+
+.cartridge-image img {
+  width: 160px;
+  transform: rotate(15deg);
+  margin-top: 100px;
+  transition: 2s;
+}
+
+.cartridge-image img:hover {
+  scale: 1.2;
+  transition: 2s;
+  transform: rotate(0deg);
+}
+
+.delivery-info {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* ------------------------------------------ */
+
+.container-wrapper-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.products-page {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.vape-box {
+  width: 650px;
+  height: 380px;
+  background-color: #bcd2ae;
+  display: flex;
+
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.vape-box-party {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: #4db400;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.vape-box-relax {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: #bcd2ae;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.products-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 50px;
+  width: 90%;
+}
+
+.cartridgeimage {
+  width: 300px;
+  height: 380px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+  transition: 1.5s;
+}
+
+.cartridgeimage:hover {
+  scale: 1.1;
+
+  transition: 1.5s;
+}
+
+.delivery-info {
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.chuk-logo {
+  position: relative;
+  width: 80px;
+  height: 50px;
+  margin-right: 30px;
+}
+
+.vape-box-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80px;
+  background-color: #028d35;
+}
+
+.vape-products-party {
+  display: flex;
+  width: 25px;
+  height: 250px;
+  transition: 1.5s;
+  padding: 40px 50px;
+}
+
+.vape-products-party:hover {
+  scale: 1.1;
+  transform: rotate(20deg);
+  transition: 1.5s;
+}
+
+.vape-products-relax {
+  width: 25px;
+  height: 260px;
+  display: flex;
+  transition: 1.5s;
+  padding: 40px 50px;
+}
+
+.vape-products-relax:hover {
+  scale: 1.1;
+  transform: rotate(-20deg);
+  transition: 1.5s;
+}
+
+/* -------------------------- */
+
+.product-info {
+  background-image: url("./images/product-info-img.jpg");
+  width: 100%;
+  background-size: cover;
+  z-index: -1111;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-info-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-info-main h1 {
+  margin-top: 20px;
+}
+
+.hexalgons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 600px;
+  margin-top: 40px;
+  margin-bottom: 150px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.hex {
+  margin-top: 30px;
+  width: 760px;
+  height: 500px;
+  z-index: 1111;
+}
+
+.percent-circles {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 80px;
+}
+
+.percent-circles-wrapper {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 50px;
+}
+
+.circle-green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #4db400;
+  margin-bottom: 10px;
+}
+
+.circle-black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #000000;
+  font-size: 30px;
+}
+
+.circle-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ----------- legal ------------- */
+
+.container-wrapper-legal {
+  width: 80rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.legal-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.legal-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.legal-text {
+  width: 500px;
+  margin-left: 50px;
+}
+
+.legal-doc-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.doc-img {
+  width: 200px;
+  margin-right: 50px;
+}
+
+/* ------------ CBD OIL INFO ------------------ */
+
+.cbd-oil-container {
+  background-image: url("./images/cbd-oil-img.jpg");
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+}
+
+.cbd-oil-wrapper {
+  width: 80rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cbd-oil-article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 370px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 50px 0px;
+}
+
+.cbd-oil-article-first {
+  width: 40%;
+  height: 300px;
+  color: white;
+  margin-left: 5%;
+}
+
+.cbd-oil-article-first h1 {
+  width: 100%;
+  height: 100px;
+}
+
+.cbd-oil-article-second {
+  width: 40%;
+  height: 300px;
+  color: white;
+  margin-right: 5%;
+}
+
+.cbd-oil-article-second h1 {
+  width: 100%;
+  height: 100px;
+}
+
+.devider {
+  width: 3px;
+  height: 340px;
+  background-color: #4db400;
+}
+
+/*---------------------- HEMPIRE INFO --------------- */
+
+.container-wrpapper-hempire {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-wrpapper-hempire p {
+  margin: 50px 30px;
+}
+
+.container-wrpapper-hempire h1 {
+  color: #4ca754;
+}
+
+.hempire-icons-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hempire-icons {
+  width: 70px;
+  height: 70px;
+  transition: 1s;
+}
+
+.hempire-icons:hover {
+  scale: 1.3;
+  cursor: pointer;
+  transition: 1s;
+}
+
+/* -------------- contact form ----------- */
+
+.contact-form-container {
+  background-image: url("./images/contact\ form\ img.jpg");
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.contact-form-wrapper {
+  width: 80rem;
+  display: flex;
+  align-items: center;
+  margin: 50px 0px;
+}
+
+.contact-form {
+  width: 550px;
+  height: 550px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-left: 50px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-header {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  width: 300px;
+  height: 70px;
+  font-size: 30px;
+  margin-top: 30px;
+  border-left: solid 20px #028d35;
+}
+
+.contact-name {
+  color: white;
+  width: 320px;
+  margin-bottom: 20px;
+  border-bottom: solid 2px #028d35;
+}
+.contact-name input {
+  width: 74%;
+  background-color: transparent;
+  color: white;
+  border-style: none;
+  outline: none;
+}
+
+.contact-email {
+  color: white;
+  width: 320px;
+  margin-bottom: 40px;
+  border-bottom: solid 2px #028d35;
+}
+
+.contact-email input {
+  width: 70%;
+  background-color: transparent;
+  color: white;
+  border-style: none;
+  outline: none;
+}
+
+.contact-text {
+  display: flex;
+  width: 320px;
+  height: 210px;
+  text-align: justify;
+  outline: none;
+}
+
+.submit-button {
+  width: 120px;
+}
+
+/* ---------------- footer --------------- */
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.footer-container {
+  width: 80rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer-wrapper {
+  width: 100%;
+}
+
+.policy {
+  width: 100%;
+  height: 20px;
+}
+
+.policy ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.policy ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.policy ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.policy ul li a:hover {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+.footer-devider {
+  width: 100%;
+  height: 3px;
+  background-color: #028d35;
+  margin-top: 20px;
+}
+
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+.fa-brands {
+  font-size: 40px;
+  color: white;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  color: #4267b2;
+  transition: 0.5s;
+}
+
+.fa-instagram:hover {
+  color: orangered;
+  transition: 0.5s;
+}
+
+.fa-youtube:hover {
+  color: #ff0000;
+  transition: 0.5s;
+}
+
+.maturity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.eighteen {
+  text-align: center;
+  font-size: 50px;
+}
+
+.parent-advisor {
+  color: white;
+  margin-left: 20px;
+  width: 600px;
+}
+
+.copyrights-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: white;
+  align-items: center;
+}
+
+@media screen and (max-width: 1110px) {
+  .products-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cartridgeimage {
+    margin-top: 30px;
+  }
+
+  .legal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+  }
+
+  .legal {
+    height: 100%;
+    margin-top: 100px;
+  }
+
+  .doc-img {
+    margin: 0px;
+  }
+
+  .legal-text {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .info-box ul li a p {
+    width: 200px;
+    font-size: 18px;
+    color: white;
+  }
+
+  html {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  h3 {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .buttons-wrapper {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40px;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .logo-wrapper {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 90%;
+  }
+
+  nav ul {
+    background-color: black;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    width: 100%;
+    height: 240px;
+  }
+
+  nav ul li a {
+    height: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .cartridge-image img {
+    width: 100px;
+  }
+
+  .cartridge-image {
+    width: 50px;
+    margin-right: 270px;
+  }
+
+  .info-box ul {
+    margin-left: 20px;
+    width: 200px;
+  }
+
+  .vape-image {
+    margin-left: 20px;
+  }
+
+  .vape-image img {
+    width: 30px;
+    transform: rotate(-5deg);
+  }
+
+  .vape-box {
+    width: 100%;
+  }
+
+  .cartridgeimage-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hex {
+    width: 100%;
+    height: 50%;
+  }
+
+  .hexalgons {
+    height: 90%;
+  }
+
+  .percent-circles-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .circle-green {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #4db400;
+  }
+
+  .circle-black {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000000;
+    font-size: 20px;
+  }
+
+  .circle-text-info {
+    text-align: center;
+    font-size: 10px;
+    width: 80px;
+  }
+
+  .percent-circles {
+    height: 100px;
+  }
+
+  .cbd-oil-article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .cbd-oil-article-first {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .cbd-oil-article-first h1 {
+    margin-top: 0px;
+  }
+
+  .cbd-oil-article-first p {
+    margin-bottom: 30px;
+  }
+
+  .cbd-oil-article-second {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .cbd-oil-article-second h1 {
+    margin-top: 0px;
+  }
+
+  .devider {
+    height: 3px;
+    width: 90%;
+    margin: 10px 0px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .footer-devider {
+    width: 80%;
+  }
+
+  .parent-advisor {
+    width: 400px;
+    height: 100%;
+    font-size: 12px;
+  }
+
+  .legal-title {
+    margin-top: 30px;
+  }
+
+  .contact-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .contact-form {
+    margin: 0;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .policy {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .policy ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .maturity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .maturity p {
+    margin-top: 20px;
+  }
+
+  .copyrights-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .hempire-icons-wrapper {
+    width: 90%;
+  }
+
+  .container-wrpapper-hempire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .legal {
+    height: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cartridgeimage-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cartridgeimage {
+    display: flex;
+  }
+
+  .cartridge-image img {
+    width: 80px;
+  }
+
+  .info-box {
+    width: 100%;
+  }
+
+  .doc-img {
+    width: 180px;
+  }
+
+  .legal {
+    height: 100%;
+    margin-bottom: 50px;
+  }
+
+  .hempire-icons {
+    width: 50px;
+    height: 50px;
+  }
+
+  .maturity {
+    width: 350px;
+  }
+
+  .maturity p {
+    width: 340px;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+}

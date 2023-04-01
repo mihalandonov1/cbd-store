@@ -1,0 +1,136 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  justify-content: space-around;
+  height: 700px;
+  margin-left: 200px;
+}
+
+#card {
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  margin-left: 50px;
+}
+
+.container {
+  margin-left: 150px;
+  border: solid 1px black;
+  width: 100%;
+}
+
+.firstName {
+  border: solid 1px black;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.firstName div {
+  width: 200px;
+}
+
+.lastName {
+  border: solid 1px black;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lastName div {
+  width: 200px;
+}
+
+.email {
+  border: solid 1px black;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.email div {
+  width: 200px;
+}
+
+.password {
+  border: solid 1px black;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.password div {
+  width: 200px;
+}
+
+.phone {
+  border: solid 1px black;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.phone div {
+  width: 200px;
+}
+
+.country {
+  border: solid 1px black;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.country div {
+  width: 200px;
+}
+
+.state {
+  border: solid 1px black;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.state div {
+  width: 200px;
+}
+
+.city {
+  border: solid 1px black;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.city div {
+  width: 200px;
+}
+
+.adress {
+  border: solid 1px black;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.adress div {
+  width: 200px;
+}
