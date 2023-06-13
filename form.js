@@ -29,33 +29,19 @@ jsonBtn.addEventListener("click", function () {
 const ul = document.getElementById("employees");
 const list = document.createDocumentFragment();
 
-fetch("http://localhost:3000/posts")
+fetch(
+  "https://eu-central-1.aws.data.mongodb-api.com/app/data-vudjd/endpoint/data/v1"
+)
   .then((response) => {
     return response.json();
   })
   .then((data) => {
     let employees = data;
-    console.table(data[0].id);
-
-    employees.map(function (employees) {
-      let li = document.createElement("li");
-      let name = document.createElement("h2");
-      let email = document.createElement("span");
-
-      name.innerHTML = `${employees.name}`;
-      email.innerHTML = `${employees.email}`;
-
-      li.appendChild(name);
-      li.appendChild(email);
-      list.appendChild(li);
-    });
+    console.table(employees);
   })
-
   .catch((err) => {
     console.log("ERROR");
   });
-
-ul.appendChild(list);
 
 // const fullName = document.getElementById("name");
 // const email = document.querySelector("#email");
